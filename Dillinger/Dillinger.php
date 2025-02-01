@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Dillinger;
+<?php
 
-class Dillinger extends \App\SupportedApps {
+namespace App\SupportedApps\Dillinger;
 
+class Dillinger extends \App\SupportedApps
+{
 }

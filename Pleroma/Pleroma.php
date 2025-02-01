@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Pleroma;
+<?php
 
-class Pleroma extends \App\SupportedApps {
+namespace App\SupportedApps\Pleroma;
 
+class Pleroma extends \App\SupportedApps
+{
 }

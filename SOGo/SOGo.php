@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\SOGo;
+<?php
 
-class SOGo extends \App\SupportedApps {
+namespace App\SupportedApps\SOGo;
 
+class SOGo extends \App\SupportedApps
+{
 }

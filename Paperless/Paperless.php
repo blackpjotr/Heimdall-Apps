@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Paperless;
+<?php
 
-class Paperless extends \App\SupportedApps {
+namespace App\SupportedApps\Paperless;
 
+class Paperless extends \App\SupportedApps
+{
 }

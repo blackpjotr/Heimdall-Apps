@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Jupyter;
+<?php
 
-class Jupyter extends \App\SupportedApps {
+namespace App\SupportedApps\Jupyter;
 
+class Jupyter extends \App\SupportedApps
+{
 }

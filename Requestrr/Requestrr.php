@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Requestrr;
+<?php
 
-class Requestrr extends \App\SupportedApps {
+namespace App\SupportedApps\Requestrr;
 
+class Requestrr extends \App\SupportedApps
+{
 }

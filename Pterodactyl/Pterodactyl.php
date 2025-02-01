@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Pterodactyl;
+<?php
 
-class Pterodactyl extends \App\SupportedApps {
+namespace App\SupportedApps\Pterodactyl;
 
+class Pterodactyl extends \App\SupportedApps
+{
 }

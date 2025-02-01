@@ -1,16 +1,19 @@
-<?php namespace App\SupportedApps\Nessus;
+<?php
 
-class Nessus extends \App\SupportedApps implements \App\EnhancedApps {
+namespace App\SupportedApps\Nessus;
 
+class Nessus extends \App\SupportedApps implements \App\EnhancedApps
+{
     public $config;
     private $clientVars = [
-        'http_errors' => false, 
-        'timeout' => 15, 
-        'connect_timeout' => 15,
-        'verify' => false,
+        "http_errors" => false,
+        "timeout" => 15,
+        "connect_timeout" => 15,
+        "verify" => false,
     ];
-    
-    function __construct() {
+
+    public function __construct()
+    {
     }
 
     private function acquireToken()
@@ -18,12 +21,20 @@ class Nessus extends \App\SupportedApps implements \App\EnhancedApps {
         $username = $this->config->username;
         $password = $this->config->password;
         $attrs = [
-            'body' => json_encode(array('username' => $username, 'password' => $password)),
-            'headers' => ['content-type' => 'application/json']
+            "body" => json_encode([
+                "username" => $username,
+                "password" => $password,
+            ]),
+            "headers" => ["content-type" => "application/json"],
         ];
-        $res = parent::execute($this->url('session'), $attrs, $this->clientVars, 'POST');
+        $res = parent::execute(
+            $this->url("session"),
+            $attrs,
+            $this->clientVars,
+            "POST"
+        );
         switch ($res->getStatusCode()) {
-            case 200: 
+            case 200:
                 $details = json_decode($res->getBody());
                 return $details->token;
             case 400:
@@ -43,34 +54,33 @@ class Nessus extends \App\SupportedApps implements \App\EnhancedApps {
             echo $e->getMessage();
             return;
         }
-        echo 'Successfully communicated with the API';
+        echo "Successfully communicated with the API";
     }
 
     public function livestats()
     {
         $token = $this->acquireToken();
-        $status = 'inactive';
+        $status = "inactive";
         $attrs = [
-            'headers' => ['X-Cookie' => 'token='.$token]
+            "headers" => ["X-Cookie" => "token=" . $token],
         ];
-        $res = parent::execute($this->url('scans'), $attrs, $this->clientVars);
+        $res = parent::execute($this->url("scans"), $attrs, $this->clientVars);
         $details = json_decode($res->getBody());
         $data = [];
         if ($details && !isset($details->error)) {
             foreach ($details->scans as $scan) {
                 if ($scan->status == "running") {
-                    $data['scanner'] = $scan->name;
-                    $status = 'active';
+                    $data["scanner"] = $scan->name;
+                    $status = "active";
                     break;
                 }
             }
         }
         return parent::getLiveStats($status, $data);
-        
     }
     public function url($endpoint)
     {
-        $api_url = parent::normaliseurl($this->config->url).$endpoint;
+        $api_url = parent::normaliseurl($this->config->url) . $endpoint;
         return $api_url;
     }
 }

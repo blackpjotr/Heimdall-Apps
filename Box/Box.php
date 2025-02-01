@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Box;
+<?php
 
-class Box extends \App\SupportedApps {
+namespace App\SupportedApps\Box;
 
+class Box extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Bastillion;
+<?php
 
-class Bastillion extends \App\SupportedApps {
+namespace App\SupportedApps\Bastillion;
 
+class Bastillion extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Healthchecks;
+<?php
 
-class Healthchecks extends \App\SupportedApps {
+namespace App\SupportedApps\Healthchecks;
 
+class Healthchecks extends \App\SupportedApps
+{
 }

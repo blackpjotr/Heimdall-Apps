@@ -1,14 +1,19 @@
-<?php namespace App\SupportedApps\Portainer;
+<?php
+
+namespace App\SupportedApps\Portainer;
+
 use Exception;
 
-class Portainer extends \App\SupportedApps implements \App\EnhancedApps {
+class Portainer extends \App\SupportedApps implements \App\EnhancedApps
+{
     public $config;
 
-    function __construct() {
-
+    public function __construct()
+    {
     }
 
-    public function test() {
+    public function test()
+    {
         try {
             $token = $this->auth();
             echo "Successfully communicated with the API";
@@ -17,18 +22,22 @@ class Portainer extends \App\SupportedApps implements \App\EnhancedApps {
         }
     }
 
-    public function auth() {
-        $attrs = [];
-
+    public function auth()
+    {
         $body["username"] = $this->config->username;
         $body["password"] = $this->config->password;
         $vars = [
-                'http_errors' => false,
-                'timeout' => 5,
-                'body' => json_encode($body)
+            "http_errors" => false,
+            "timeout" => 5,
+            "body" => json_encode($body),
         ];
 
-        $result = parent::execute($this->url('api/auth'), $attrs, $vars, 'POST');
+        $result = parent::execute(
+            $this->url("api/auth"),
+            $this->getAttrs(),
+            $vars,
+            "POST"
+        );
         if (null === $result) {
             throw new Exception("Could not connect to Portainer");
         }
@@ -42,21 +51,27 @@ class Portainer extends \App\SupportedApps implements \App\EnhancedApps {
         return $response->jwt;
     }
 
-    public function livestats() {
-        $status = 'inactive';
+    public function livestats()
+    {
+        $status = "inactive";
         $running = 0;
         $stopped = 0;
 
         $token = $this->auth();
         $headers = [
-            'Authorization' => 'Bearer ' . $token,
-            'Accept'        => 'application/json',
-        ];
-        $attrs = [
-            'headers' => $headers
+            "Authorization" => "Bearer " . $token,
+            "Accept" => "application/json",
         ];
 
-        $result = parent::execute($this->url('api/endpoints?limit=100&start=0'), $attrs, []);
+        $attrs = $this->getAttrs();
+
+        $attrs["headers"] = $headers;
+
+        $result = parent::execute(
+            $this->url("api/endpoints?limit=100&start=0"),
+            $attrs,
+            []
+        );
         if (null === $result) {
             throw new Exception("Could not connect to Portainer");
         }
@@ -73,24 +88,43 @@ class Portainer extends \App\SupportedApps implements \App\EnhancedApps {
 
             $snapshot = $endpoint->Snapshots[0];
             $data = [
-                $running += $snapshot->RunningContainerCount,
-                $stopped += $snapshot->StoppedContainerCount
+                ($running += $snapshot->RunningContainerCount),
+                ($stopped += $snapshot->StoppedContainerCount),
             ];
         }
 
         $data = [
-            'running' => $running,
-            'stopped' => $stopped
+            "running" => $running,
+            "stopped" => $stopped,
         ];
         if ($running || $stopped) {
-            $status = 'active';
+            $status = "active";
         }
         return parent::getLiveStats($status, $data);
-
     }
 
-    public function url($endpoint) {
-        $api_url = parent::normaliseurl($this->config->url).$endpoint;
+    public function url($endpoint)
+    {
+        $api_url = parent::normaliseurl($this->config->url) . $endpoint;
         return $api_url;
+    }
+
+    public function getConfigValue($key, $default = null)
+    {
+        return isset($this->config) && isset($this->config->$key)
+            ? $this->config->$key
+            : $default;
+    }
+
+    public function getAttrs()
+    {
+        $ignoreTls = $this->getConfigValue("ignore_tls", false);
+        if ($ignoreTls) {
+            $attrs["verify"] = false;
+        } else {
+            $attrs = [];
+        }
+
+        return $attrs;
     }
 }

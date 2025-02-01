@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\TVHeadend;
+<?php
 
-class TVHeadend extends \App\SupportedApps {
+namespace App\SupportedApps\TVHeadend;
 
+class TVHeadend extends \App\SupportedApps
+{
 }

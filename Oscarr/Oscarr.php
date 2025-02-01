@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Oscarr;
+<?php
 
-class Oscarr extends \App\SupportedApps {
+namespace App\SupportedApps\Oscarr;
 
+class Oscarr extends \App\SupportedApps
+{
 }

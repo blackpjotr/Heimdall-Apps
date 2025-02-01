@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Clarkson;
+<?php
 
-class Clarkson extends \App\SupportedApps {
+namespace App\SupportedApps\Clarkson;
 
+class Clarkson extends \App\SupportedApps
+{
 }

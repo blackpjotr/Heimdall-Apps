@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\MotionEye;
+<?php
 
-class MotionEye extends \App\SupportedApps {
+namespace App\SupportedApps\MotionEye;
 
+class MotionEye extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Netboot;
+<?php
 
-class Netboot extends \App\SupportedApps {
+namespace App\SupportedApps\Netboot;
 
+class Netboot extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Airsonic;
+<?php
 
-class Airsonic extends \App\SupportedApps {
+namespace App\SupportedApps\Airsonic;
 
+class Airsonic extends \App\SupportedApps
+{
 }

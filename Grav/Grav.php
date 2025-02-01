@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Grav;
+<?php
 
-class Grav extends \App\SupportedApps {
+namespace App\SupportedApps\Grav;
 
+class Grav extends \App\SupportedApps
+{
 }

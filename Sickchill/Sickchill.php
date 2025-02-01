@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Sickchill;
+<?php
 
-class Sickchill extends \App\SupportedApps {
+namespace App\SupportedApps\Sickchill;
 
+class Sickchill extends \App\SupportedApps
+{
 }

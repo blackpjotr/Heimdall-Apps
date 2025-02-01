@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Kopia;
+<?php
 
-class Kopia extends \App\SupportedApps {
+namespace App\SupportedApps\Kopia;
 
+class Kopia extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Lychee;
+<?php
 
-class Lychee extends \App\SupportedApps {
+namespace App\SupportedApps\Lychee;
 
+class Lychee extends \App\SupportedApps
+{
 }

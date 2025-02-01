@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\QNAP;
+<?php
 
-class QNAP extends \App\SupportedApps {
+namespace App\SupportedApps\QNAP;
 
+class QNAP extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Hasura;
+<?php
 
-class Hasura extends \App\SupportedApps {
+namespace App\SupportedApps\Hasura;
 
+class Hasura extends \App\SupportedApps
+{
 }

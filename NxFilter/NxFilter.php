@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\NxFilter;
+<?php
 
-class NxFilter extends \App\SupportedApps {
+namespace App\SupportedApps\NxFilter;
 
+class NxFilter extends \App\SupportedApps
+{
 }

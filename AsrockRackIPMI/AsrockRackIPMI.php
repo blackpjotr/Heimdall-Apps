@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\AsrockRackIPMI;
+<?php
 
-class AsrockRackIPMI extends \App\SupportedApps {
+namespace App\SupportedApps\AsrockRackIPMI;
 
+class AsrockRackIPMI extends \App\SupportedApps
+{
 }

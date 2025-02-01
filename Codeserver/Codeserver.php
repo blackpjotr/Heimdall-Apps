@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Codeserver;
+<?php
 
-class Codeserver extends \App\SupportedApps {
+namespace App\SupportedApps\Codeserver;
 
+class Codeserver extends \App\SupportedApps
+{
 }

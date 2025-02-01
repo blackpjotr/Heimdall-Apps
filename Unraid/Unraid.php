@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Unraid;
+<?php
 
-class Unraid extends \App\SupportedApps {
+namespace App\SupportedApps\Unraid;
 
+class Unraid extends \App\SupportedApps
+{
 }

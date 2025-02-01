@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Zammad;
+<?php
 
-class Zammad extends \App\SupportedApps {
+namespace App\SupportedApps\Zammad;
 
+class Zammad extends \App\SupportedApps
+{
 }

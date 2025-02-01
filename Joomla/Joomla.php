@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Joomla;
+<?php
 
-class Joomla extends \App\SupportedApps {
+namespace App\SupportedApps\Joomla;
 
+class Joomla extends \App\SupportedApps
+{
 }

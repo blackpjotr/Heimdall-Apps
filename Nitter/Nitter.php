@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Nitter;
+<?php
 
-class Nitter extends \App\SupportedApps {
+namespace App\SupportedApps\Nitter;
 
+class Nitter extends \App\SupportedApps
+{
 }

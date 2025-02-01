@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\TasmoAdmin;
+<?php
 
-class TasmoAdmin extends \App\SupportedApps {
+namespace App\SupportedApps\TasmoAdmin;
 
+class TasmoAdmin extends \App\SupportedApps
+{
 }

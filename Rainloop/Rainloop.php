@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Rainloop;
+<?php
 
-class Rainloop extends \App\SupportedApps {
+namespace App\SupportedApps\Rainloop;
 
+class Rainloop extends \App\SupportedApps
+{
 }

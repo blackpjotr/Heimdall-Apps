@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\RiotWeb;
+<?php
 
-class RiotWeb extends \App\SupportedApps {
+namespace App\SupportedApps\RiotWeb;
 
+class RiotWeb extends \App\SupportedApps
+{
 }

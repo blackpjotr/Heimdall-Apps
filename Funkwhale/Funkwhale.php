@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Funkwhale;
+<?php
 
-class Funkwhale extends \App\SupportedApps {
+namespace App\SupportedApps\Funkwhale;
 
+class Funkwhale extends \App\SupportedApps
+{
 }

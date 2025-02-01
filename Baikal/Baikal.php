@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Baikal;
+<?php
 
-class Baikal extends \App\SupportedApps {
+namespace App\SupportedApps\Baikal;
 
+class Baikal extends \App\SupportedApps
+{
 }

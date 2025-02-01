@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\VirtualRadarServer;
+<?php
 
-class VirtualRadarServer extends \App\SupportedApps {
+namespace App\SupportedApps\VirtualRadarServer;
 
+class VirtualRadarServer extends \App\SupportedApps
+{
 }

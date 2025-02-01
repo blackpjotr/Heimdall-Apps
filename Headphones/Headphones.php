@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Headphones;
+<?php
 
-class Headphones extends \App\SupportedApps {
+namespace App\SupportedApps\Headphones;
 
+class Headphones extends \App\SupportedApps
+{
 }

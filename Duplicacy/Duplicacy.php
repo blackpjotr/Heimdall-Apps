@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Duplicacy;
+<?php
 
-class Duplicacy extends \App\SupportedApps {
+namespace App\SupportedApps\Duplicacy;
 
+class Duplicacy extends \App\SupportedApps
+{
 }

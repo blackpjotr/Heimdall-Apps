@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Nagios;
+<?php
 
-class Nagios extends \App\SupportedApps {
+namespace App\SupportedApps\Nagios;
 
+class Nagios extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\NodeRed;
+<?php
 
-class NodeRed extends \App\SupportedApps {
+namespace App\SupportedApps\NodeRed;
 
+class NodeRed extends \App\SupportedApps
+{
 }

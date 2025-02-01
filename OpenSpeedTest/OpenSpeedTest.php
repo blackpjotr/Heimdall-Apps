@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\OpenSpeedTest;
+<?php
 
-class OpenSpeedTest extends \App\SupportedApps {
+namespace App\SupportedApps\OpenSpeedTest;
 
+class OpenSpeedTest extends \App\SupportedApps
+{
 }

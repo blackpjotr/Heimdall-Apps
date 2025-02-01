@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\NetBox;
+<?php
 
-class NetBox extends \App\SupportedApps {
+namespace App\SupportedApps\NetBox;
 
+class NetBox extends \App\SupportedApps
+{
 }

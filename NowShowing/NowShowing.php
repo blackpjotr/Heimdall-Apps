@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\NowShowing;
+<?php
 
-class NowShowing extends \App\SupportedApps {
+namespace App\SupportedApps\NowShowing;
 
+class NowShowing extends \App\SupportedApps
+{
 }

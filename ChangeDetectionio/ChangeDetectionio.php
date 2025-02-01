@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\ChangeDetectionio;
+<?php
 
-class ChangeDetectionio extends \App\SupportedApps {
+namespace App\SupportedApps\ChangeDetectionio;
 
+class ChangeDetectionio extends \App\SupportedApps
+{
 }

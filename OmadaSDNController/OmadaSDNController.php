@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\OmadaSDNController;
+<?php
 
-class OmadaSDNController extends \App\SupportedApps {
+namespace App\SupportedApps\OmadaSDNController;
 
+class OmadaSDNController extends \App\SupportedApps
+{
 }

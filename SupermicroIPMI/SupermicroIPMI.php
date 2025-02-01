@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\SupermicroIPMI;
+<?php
 
-class SupermicroIPMI extends \App\SupportedApps {
+namespace App\SupportedApps\SupermicroIPMI;
 
+class SupermicroIPMI extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Handbrake;
+<?php
 
-class Handbrake extends \App\SupportedApps {
+namespace App\SupportedApps\Handbrake;
 
+class Handbrake extends \App\SupportedApps
+{
 }

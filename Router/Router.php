@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Router;
+<?php
 
-class Router extends \App\SupportedApps {
+namespace App\SupportedApps\Router;
 
+class Router extends \App\SupportedApps
+{
 }

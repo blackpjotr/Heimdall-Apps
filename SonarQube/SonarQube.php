@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\SonarQube;
+<?php
 
-class SonarQube extends \App\SupportedApps {
+namespace App\SupportedApps\SonarQube;
 
+class SonarQube extends \App\SupportedApps
+{
 }

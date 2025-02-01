@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\TandoorRecipes;
+<?php
 
-class TandoorRecipes extends \App\SupportedApps {
+namespace App\SupportedApps\TandoorRecipes;
 
+class TandoorRecipes extends \App\SupportedApps
+{
 }

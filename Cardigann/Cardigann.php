@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Cardigann;
+<?php
 
-class Cardigann extends \App\SupportedApps {
+namespace App\SupportedApps\Cardigann;
 
+class Cardigann extends \App\SupportedApps
+{
 }

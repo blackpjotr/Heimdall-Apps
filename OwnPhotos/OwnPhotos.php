@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\OwnPhotos;
+<?php
 
-class OwnPhotos extends \App\SupportedApps {
+namespace App\SupportedApps\OwnPhotos;
 
+class OwnPhotos extends \App\SupportedApps
+{
 }

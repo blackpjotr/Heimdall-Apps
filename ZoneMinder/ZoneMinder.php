@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\ZoneMinder;
+<?php
 
-class ZoneMinder extends \App\SupportedApps {
+namespace App\SupportedApps\ZoneMinder;
 
+class ZoneMinder extends \App\SupportedApps
+{
 }

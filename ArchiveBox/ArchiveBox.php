@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\ArchiveBox;
+<?php
 
-class ArchiveBox extends \App\SupportedApps {
+namespace App\SupportedApps\ArchiveBox;
 
+class ArchiveBox extends \App\SupportedApps
+{
 }

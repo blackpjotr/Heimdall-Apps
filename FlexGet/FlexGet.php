@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\FlexGet;
+<?php
 
-class FlexGet extends \App\SupportedApps {
+namespace App\SupportedApps\FlexGet;
 
+class FlexGet extends \App\SupportedApps
+{
 }

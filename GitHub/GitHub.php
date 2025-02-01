@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\GitHub;
+<?php
 
-class GitHub extends \App\SupportedApps {
+namespace App\SupportedApps\GitHub;
 
+class GitHub extends \App\SupportedApps
+{
 }

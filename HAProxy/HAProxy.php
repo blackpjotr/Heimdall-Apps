@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\HAProxy;
+<?php
 
-class HAProxy extends \App\SupportedApps {
+namespace App\SupportedApps\HAProxy;
 
+class HAProxy extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\TinyTinyRSS;
+<?php
 
-class TinyTinyRSS extends \App\SupportedApps {
+namespace App\SupportedApps\TinyTinyRSS;
 
+class TinyTinyRSS extends \App\SupportedApps
+{
 }

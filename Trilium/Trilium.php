@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Trilium;
+<?php
 
-class Trilium extends \App\SupportedApps {
+namespace App\SupportedApps\Trilium;
 
+class Trilium extends \App\SupportedApps
+{
 }

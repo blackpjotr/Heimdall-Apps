@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\ESPHome;
+<?php
 
-class ESPHome extends \App\SupportedApps {
+namespace App\SupportedApps\ESPHome;
 
+class ESPHome extends \App\SupportedApps
+{
 }

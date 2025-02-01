@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\CUPS;
+<?php
 
-class CUPS extends \App\SupportedApps {
+namespace App\SupportedApps\CUPS;
 
+class CUPS extends \App\SupportedApps
+{
 }

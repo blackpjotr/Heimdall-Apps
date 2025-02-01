@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\PeerTube;
+<?php
 
-class PeerTube extends \App\SupportedApps {
+namespace App\SupportedApps\PeerTube;
 
+class PeerTube extends \App\SupportedApps
+{
 }

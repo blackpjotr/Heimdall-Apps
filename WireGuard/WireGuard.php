@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\WireGuard;
+<?php
 
-class WireGuard extends \App\SupportedApps {
+namespace App\SupportedApps\WireGuard;
 
+class WireGuard extends \App\SupportedApps
+{
 }

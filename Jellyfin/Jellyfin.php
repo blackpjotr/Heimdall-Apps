@@ -1,60 +1,71 @@
-<?php namespace App\SupportedApps\Jellyfin;
+<?php
 
-class Jellyfin extends \App\SupportedApps implements \App\EnhancedApps {
+namespace App\SupportedApps\Jellyfin;
 
+class Jellyfin extends \App\SupportedApps implements \App\EnhancedApps
+{
     public $config;
 
-    function __construct() {
+    public function __construct()
+    {
     }
 
     public function test()
     {
-        $test = parent::appTest($this->url('System/Info/Public'), $this->getAttrs());
+        $test = parent::appTest(
+            $this->url("System/Info"),
+            $this->getAttrs()
+        );
         echo $test->status;
     }
 
     public function livestats()
     {
-        $status = 'inactive';
-        $res = parent::execute($this->url('Items/Counts'), $this->getAttrs());
+        $status = "inactive";
+        $res = parent::execute($this->url("Items/Counts"), $this->getAttrs());
         $result = json_decode($res->getBody());
-        $details = ['visiblestats'=>[]];
-        foreach($this->config->availablestats as $stat) {
-        $newstat = new \stdClass();
-        $newstat->title = self::getAvailableStats()[$stat];
-        $newstat->value = $result->{$stat};
-                $details['visiblestats'][] = $newstat;
+        $details = ["visiblestats" => []];
+        foreach ($this->config->availablestats as $stat) {
+            $newstat = new \stdClass();
+            $newstat->title = self::getAvailableStats()[$stat];
+            $newstat->value = $result->{$stat};
+            $details["visiblestats"][] = $newstat;
         }
         return parent::getLiveStats($status, $details);
     }
     public function url($endpoint)
     {
-        $api_url = parent::normaliseurl($this->config->url).$endpoint;
+        $api_url = parent::normaliseurl($this->config->url) . $endpoint;
         return $api_url;
     }
 
-    private function getAttrs() {
+    private function getAttrs()
+    {
+        $authorizationHeader = "MediaBrowser " .
+            "Token=\"" . urlencode($this->config->password) . "\", " .
+            "Client=\"Heimdall\"";
         return [
-            'headers' => [
-                'X-MediaBrowser-Token' => $this->config->password,
-            ]
+            "headers" => [
+                "Authorization" => $authorizationHeader,
+            ],
         ];
     }
 
-    public static function getAvailableStats() {
+    public static function getAvailableStats()
+    {
         return [
-            'MovieCount'=>'Movies',
-            'SeriesCount'=>'Series',
-            'EpisodeCount'=>'Episodes',
-            'ArtistCount'=>'Artists',
-            'ProgramCount'=>'Programs',
-            'TrailerCount'=>'Trailers',
-            'SongCount'=>'Songs',
-            'AlbumCount'=>'Albums',
-            'MusicVideoCount'=>'MusicVideos',
-            'BoxSetCount'=>'BoxSets',
-            'BookCount'=>'Books',
-            'ItemCount'=>'Items',
+            "MovieCount" => "Movies",
+            "SeriesCount" => "Series",
+            "EpisodeCount" => "Episodes",
+            "ArtistCount" => "Artists",
+            "ProgramCount" => "Programs",
+            "TrailerCount" => "Trailers",
+            "SongCount" => "Songs",
+            "AlbumCount" => "Albums",
+            "MusicVideoCount" => "MusicVideos",
+            "BoxSetCount" => "BoxSets",
+            "BookCount" => "Books",
+            "ItemCount" => "Items",
         ];
     }
 }

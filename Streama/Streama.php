@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Streama;
+<?php
 
-class Streama extends \App\SupportedApps {
+namespace App\SupportedApps\Streama;
 
+class Streama extends \App\SupportedApps
+{
 }

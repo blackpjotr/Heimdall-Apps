@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Wekan;
+<?php
 
-class Wekan extends \App\SupportedApps {
+namespace App\SupportedApps\Wekan;
 
+class Wekan extends \App\SupportedApps
+{
 }

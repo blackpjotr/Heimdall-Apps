@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Mastodon;
+<?php
 
-class Mastodon extends \App\SupportedApps {
+namespace App\SupportedApps\Mastodon;
 
+class Mastodon extends \App\SupportedApps
+{
 }

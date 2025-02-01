@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\OpenSprinkler;
+<?php
 
-class OpenSprinkler extends \App\SupportedApps {
+namespace App\SupportedApps\OpenSprinkler;
 
+class OpenSprinkler extends \App\SupportedApps
+{
 }

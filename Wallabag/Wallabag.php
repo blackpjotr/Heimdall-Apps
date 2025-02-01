@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Wallabag;
+<?php
 
-class Wallabag extends \App\SupportedApps {
+namespace App\SupportedApps\Wallabag;
 
+class Wallabag extends \App\SupportedApps
+{
 }

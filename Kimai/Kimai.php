@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Kimai;
+<?php
 
-class Kimai extends \App\SupportedApps {
+namespace App\SupportedApps\Kimai;
 
+class Kimai extends \App\SupportedApps
+{
 }

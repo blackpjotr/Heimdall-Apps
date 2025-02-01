@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Ubooquity;
+<?php
 
-class Ubooquity extends \App\SupportedApps {
+namespace App\SupportedApps\Ubooquity;
 
+class Ubooquity extends \App\SupportedApps
+{
 }

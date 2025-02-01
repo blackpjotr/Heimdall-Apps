@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Synclounge;
+<?php
 
-class Synclounge extends \App\SupportedApps {
+namespace App\SupportedApps\Synclounge;
 
+class Synclounge extends \App\SupportedApps
+{
 }

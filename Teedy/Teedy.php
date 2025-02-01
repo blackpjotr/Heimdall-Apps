@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Teedy;
+<?php
 
-class Teedy extends \App\SupportedApps {
+namespace App\SupportedApps\Teedy;
 
+class Teedy extends \App\SupportedApps
+{
 }

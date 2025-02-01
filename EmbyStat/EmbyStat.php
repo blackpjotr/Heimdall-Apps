@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\EmbyStat;
+<?php
 
-class EmbyStat extends \App\SupportedApps {
+namespace App\SupportedApps\EmbyStat;
 
+class EmbyStat extends \App\SupportedApps
+{
 }

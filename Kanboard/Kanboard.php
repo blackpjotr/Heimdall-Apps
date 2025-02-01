@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Kanboard;
+<?php
 
-class Kanboard extends \App\SupportedApps {
+namespace App\SupportedApps\Kanboard;
 
+class Kanboard extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Medusa;
+<?php
 
-class Medusa extends \App\SupportedApps {
+namespace App\SupportedApps\Medusa;
 
+class Medusa extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\CryptPad;
+<?php
 
-class CryptPad extends \App\SupportedApps {
+namespace App\SupportedApps\CryptPad;
 
+class CryptPad extends \App\SupportedApps
+{
 }

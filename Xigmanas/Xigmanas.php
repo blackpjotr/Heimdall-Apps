@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Xigmanas;
+<?php
 
-class Xigmanas extends \App\SupportedApps {
+namespace App\SupportedApps\Xigmanas;
 
+class Xigmanas extends \App\SupportedApps
+{
 }

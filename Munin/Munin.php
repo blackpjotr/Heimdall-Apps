@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Munin;
+<?php
 
-class Munin extends \App\SupportedApps {
+namespace App\SupportedApps\Munin;
 
+class Munin extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\InfluxDB;
+<?php
 
-class InfluxDB extends \App\SupportedApps {
+namespace App\SupportedApps\InfluxDB;
 
+class InfluxDB extends \App\SupportedApps
+{
 }

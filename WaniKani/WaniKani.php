@@ -1,13 +1,16 @@
-<?php namespace App\SupportedApps\WaniKani;
+<?php
 
-class WaniKani extends \App\SupportedApps implements \App\EnhancedApps {
+namespace App\SupportedApps\WaniKani;
 
+class WaniKani extends \App\SupportedApps implements \App\EnhancedApps
+{
     public $config;
 
     //protected $login_first = true; // Uncomment if api requests need to be authed first
     //protected $method = 'POST';  // Uncomment if requests to the API should be set by POST
 
-    function __construct() {
+    public function __construct()
+    {
         //$this->jar = new \GuzzleHttp\Cookie\CookieJar; // Uncomment if cookies need to be set
     }
 
@@ -18,9 +21,9 @@ class WaniKani extends \App\SupportedApps implements \App\EnhancedApps {
     {
         $api_token = $this->config->username;
         $attrs = [
-            'headers' => ['Authorization' => 'Bearer '.$api_token]
+            "headers" => ["Authorization" => "Bearer " . $api_token],
         ];
-        return parent::execute($this->url('user'), $attrs, false, 'GET');
+        return parent::execute($this->url("user"), $attrs, null, "GET");
     }
 
     /**
@@ -29,9 +32,9 @@ class WaniKani extends \App\SupportedApps implements \App\EnhancedApps {
     public function test()
     {
         $test = $this->login();
-        if($test->getStatusCode() === 200 && $test->getBody()) {
+        if ($test->getStatusCode() === 200 && $test->getBody()) {
             $wk_resp = json_decode($test->getBody());
-            echo "Hello ".$wk_resp->data->username;
+            echo "Hello " . $wk_resp->data->username;
         } else {
             echo "Failed";
         }
@@ -42,34 +45,33 @@ class WaniKani extends \App\SupportedApps implements \App\EnhancedApps {
      */
     public function livestats()
     {
-        $status = 'inactive';
+        $status = "inactive";
         $now = \Carbon\Carbon::now();
         $api_token = $this->config->username;
         $attrs = [
-            'headers' => ['Authorization' => 'Bearer '.$api_token]
+            "headers" => ["Authorization" => "Bearer " . $api_token],
         ];
-        $res =  parent::execute($this->url('summary'), $attrs, false, 'GET');
+        $res = parent::execute($this->url("summary"), $attrs, null, "GET");
         $details = json_decode($res->getBody());
-        $data = [ "lessons" => 0, "reviews" => 0 ];
-        foreach($details->data->lessons as $lesson)
-        {
-            $available_at = \Carbon\Carbon::createFromTimeString($lesson->available_at);
-            if($now >= $available_at)
-            {
+        $data = ["lessons" => 0, "reviews" => 0];
+        foreach ($details->data->lessons as $lesson) {
+            $available_at = \Carbon\Carbon::createFromTimeString(
+                $lesson->available_at
+            );
+            if ($now >= $available_at) {
                 $data["lessons"] += count($lesson->subject_ids);
             }
         }
-        foreach($details->data->reviews as $review)
-        {
-            $available_at = \Carbon\Carbon::createFromTimeString($review->available_at);
-            if($now >= $available_at)
-            {
+        foreach ($details->data->reviews as $review) {
+            $available_at = \Carbon\Carbon::createFromTimeString(
+                $review->available_at
+            );
+            if ($now >= $available_at) {
                 $data["reviews"] += count($review->subject_ids);
             }
         }
 
         return parent::getLiveStats($status, $data);
-
     }
 
     /**
@@ -77,7 +79,8 @@ class WaniKani extends \App\SupportedApps implements \App\EnhancedApps {
      */
     public function url($endpoint)
     {
-        $api_url = parent::normaliseurl('https://api.wanikani.com/v2/').$endpoint;
+        $api_url =
+            parent::normaliseurl("https://api.wanikani.com/v2/") . $endpoint;
         return $api_url;
     }
 }

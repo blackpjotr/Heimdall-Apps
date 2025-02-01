@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Wetty;
+<?php
 
-class Wetty extends \App\SupportedApps {
+namespace App\SupportedApps\Wetty;
 
+class Wetty extends \App\SupportedApps
+{
 }

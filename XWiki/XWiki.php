@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\XWiki;
+<?php
 
-class XWiki extends \App\SupportedApps {
+namespace App\SupportedApps\XWiki;
 
+class XWiki extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Rclone;
+<?php
 
-class Rclone extends \App\SupportedApps {
+namespace App\SupportedApps\Rclone;
 
+class Rclone extends \App\SupportedApps
+{
 }

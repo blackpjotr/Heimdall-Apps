@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\WgGenWeb;
+<?php
 
-class WgGenWeb extends \App\SupportedApps {
+namespace App\SupportedApps\WgGenWeb;
 
+class WgGenWeb extends \App\SupportedApps
+{
 }

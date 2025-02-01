@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\FirefoxSend;
+<?php
 
-class FirefoxSend extends \App\SupportedApps {
+namespace App\SupportedApps\FirefoxSend;
 
+class FirefoxSend extends \App\SupportedApps
+{
 }

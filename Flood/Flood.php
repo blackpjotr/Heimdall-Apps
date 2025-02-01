@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Flood;
+<?php
 
-class Flood extends \App\SupportedApps {
+namespace App\SupportedApps\Flood;
 
+class Flood extends \App\SupportedApps
+{
 }

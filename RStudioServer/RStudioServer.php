@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\RStudioServer;
+<?php
 
-class RStudioServer extends \App\SupportedApps {
+namespace App\SupportedApps\RStudioServer;
 
+class RStudioServer extends \App\SupportedApps
+{
 }

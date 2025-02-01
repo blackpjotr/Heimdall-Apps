@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Tachidesk;
+<?php
 
-class Tachidesk extends \App\SupportedApps {
+namespace App\SupportedApps\Tachidesk;
 
+class Tachidesk extends \App\SupportedApps
+{
 }

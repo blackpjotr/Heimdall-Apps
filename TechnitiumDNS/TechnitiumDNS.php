@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\TechnitiumDNS;
+<?php
 
-class TechnitiumDNS extends \App\SupportedApps {
+namespace App\SupportedApps\TechnitiumDNS;
 
+class TechnitiumDNS extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\DokuWiki;
+<?php
 
-class DokuWiki extends \App\SupportedApps {
+namespace App\SupportedApps\DokuWiki;
 
+class DokuWiki extends \App\SupportedApps
+{
 }

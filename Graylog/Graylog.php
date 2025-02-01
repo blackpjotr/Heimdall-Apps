@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Graylog;
+<?php
 
-class Graylog extends \App\SupportedApps {
+namespace App\SupportedApps\Graylog;
 
+class Graylog extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Mailhog;
+<?php
 
-class Mailhog extends \App\SupportedApps {
+namespace App\SupportedApps\Mailhog;
 
+class Mailhog extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\PiVPN;
+<?php
 
-class PiVPN extends \App\SupportedApps {
+namespace App\SupportedApps\PiVPN;
 
+class PiVPN extends \App\SupportedApps
+{
 }

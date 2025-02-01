@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Yacht;
+<?php
 
-class Yacht extends \App\SupportedApps {
+namespace App\SupportedApps\Yacht;
 
+class Yacht extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\PaloAltoNetworks;
+<?php
 
-class PaloAltoNetworks extends \App\SupportedApps {
+namespace App\SupportedApps\PaloAltoNetworks;
 
+class PaloAltoNetworks extends \App\SupportedApps
+{
 }

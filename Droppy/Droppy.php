@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Droppy;
+<?php
 
-class Droppy extends \App\SupportedApps {
+namespace App\SupportedApps\Droppy;
 
+class Droppy extends \App\SupportedApps
+{
 }

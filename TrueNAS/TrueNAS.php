@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\TrueNAS;
+<?php
 
-class TrueNAS extends \App\SupportedApps {
+namespace App\SupportedApps\TrueNAS;
 
+class TrueNAS extends \App\SupportedApps
+{
 }

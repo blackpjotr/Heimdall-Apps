@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\PlexRequests;
+<?php
 
-class PlexRequests extends \App\SupportedApps {
+namespace App\SupportedApps\PlexRequests;
 
+class PlexRequests extends \App\SupportedApps
+{
 }

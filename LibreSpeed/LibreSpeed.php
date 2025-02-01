@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\LibreSpeed;
+<?php
 
-class LibreSpeed extends \App\SupportedApps {
+namespace App\SupportedApps\LibreSpeed;
 
+class LibreSpeed extends \App\SupportedApps
+{
 }

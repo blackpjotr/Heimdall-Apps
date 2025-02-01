@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Kibana;
+<?php
 
-class Kibana extends \App\SupportedApps {
+namespace App\SupportedApps\Kibana;
 
+class Kibana extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\CalibreWeb;
+<?php
 
-class CalibreWeb extends \App\SupportedApps {
+namespace App\SupportedApps\CalibreWeb;
 
+class CalibreWeb extends \App\SupportedApps
+{
 }

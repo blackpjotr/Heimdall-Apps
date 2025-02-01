@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\SickGear;
+<?php
 
-class SickGear extends \App\SupportedApps {
+namespace App\SupportedApps\SickGear;
 
+class SickGear extends \App\SupportedApps
+{
 }

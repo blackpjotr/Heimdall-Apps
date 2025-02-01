@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Recalbox;
+<?php
 
-class Recalbox extends \App\SupportedApps {
+namespace App\SupportedApps\Recalbox;
 
+class Recalbox extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Adminer;
+<?php
 
-class Adminer extends \App\SupportedApps {
+namespace App\SupportedApps\Adminer;
 
+class Adminer extends \App\SupportedApps
+{
 }

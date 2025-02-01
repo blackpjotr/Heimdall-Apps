@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\ProjectSend;
+<?php
 
-class ProjectSend extends \App\SupportedApps {
+namespace App\SupportedApps\ProjectSend;
 
+class ProjectSend extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Shaarli;
+<?php
 
-class Shaarli extends \App\SupportedApps {
+namespace App\SupportedApps\Shaarli;
 
+class Shaarli extends \App\SupportedApps
+{
 }

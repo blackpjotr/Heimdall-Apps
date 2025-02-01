@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Jitsi;
+<?php
 
-class Jitsi extends \App\SupportedApps {
+namespace App\SupportedApps\Jitsi;
 
+class Jitsi extends \App\SupportedApps
+{
 }

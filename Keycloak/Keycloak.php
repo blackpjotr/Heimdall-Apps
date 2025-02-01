@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Keycloak;
+<?php
 
-class Keycloak extends \App\SupportedApps {
+namespace App\SupportedApps\Keycloak;
 
+class Keycloak extends \App\SupportedApps
+{
 }

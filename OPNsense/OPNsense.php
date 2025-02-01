@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\OPNsense;
+<?php
 
-class OPNsense extends \App\SupportedApps {
+namespace App\SupportedApps\OPNsense;
 
+class OPNsense extends \App\SupportedApps
+{
 }

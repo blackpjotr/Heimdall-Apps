@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\ArchiveTeamWarrior;
+<?php
 
-class ArchiveTeamWarrior extends \App\SupportedApps {
+namespace App\SupportedApps\ArchiveTeamWarrior;
 
+class ArchiveTeamWarrior extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\McMyAdmin;
+<?php
 
-class McMyAdmin extends \App\SupportedApps {
+namespace App\SupportedApps\McMyAdmin;
 
+class McMyAdmin extends \App\SupportedApps
+{
 }

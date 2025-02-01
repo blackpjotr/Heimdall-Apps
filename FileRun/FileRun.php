@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\FileRun;
+<?php
 
-class FileRun extends \App\SupportedApps {
+namespace App\SupportedApps\FileRun;
 
+class FileRun extends \App\SupportedApps
+{
 }

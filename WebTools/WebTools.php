@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\WebTools;
+<?php
 
-class WebTools extends \App\SupportedApps {
+namespace App\SupportedApps\WebTools;
 
+class WebTools extends \App\SupportedApps
+{
 }

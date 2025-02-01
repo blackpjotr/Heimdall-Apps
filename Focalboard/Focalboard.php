@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Focalboard;
+<?php
 
-class Focalboard extends \App\SupportedApps {
+namespace App\SupportedApps\Focalboard;
 
+class Focalboard extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\PsiTransfer;
+<?php
 
-class PsiTransfer extends \App\SupportedApps {
+namespace App\SupportedApps\PsiTransfer;
 
+class PsiTransfer extends \App\SupportedApps
+{
 }

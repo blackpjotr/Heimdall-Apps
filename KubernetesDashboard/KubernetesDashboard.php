@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\KubernetesDashboard;
+<?php
 
-class KubernetesDashboard extends \App\SupportedApps {
+namespace App\SupportedApps\KubernetesDashboard;
 
+class KubernetesDashboard extends \App\SupportedApps
+{
 }

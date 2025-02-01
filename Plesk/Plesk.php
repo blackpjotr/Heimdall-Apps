@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Plesk;
+<?php
 
-class Plesk extends \App\SupportedApps {
+namespace App\SupportedApps\Plesk;
 
+class Plesk extends \App\SupportedApps
+{
 }

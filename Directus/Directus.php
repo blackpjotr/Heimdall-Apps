@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Directus;
+<?php
 
-class Directus extends \App\SupportedApps {
+namespace App\SupportedApps\Directus;
 
+class Directus extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\JDownloader;
+<?php
 
-class JDownloader extends \App\SupportedApps {
+namespace App\SupportedApps\JDownloader;
 
+class JDownloader extends \App\SupportedApps
+{
 }

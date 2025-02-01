@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Grocy;
+<?php
 
-class Grocy extends \App\SupportedApps {
+namespace App\SupportedApps\Grocy;
 
+class Grocy extends \App\SupportedApps
+{
 }

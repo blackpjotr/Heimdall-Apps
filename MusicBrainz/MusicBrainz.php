@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\MusicBrainz;
+<?php
 
-class MusicBrainz extends \App\SupportedApps {
+namespace App\SupportedApps\MusicBrainz;
 
+class MusicBrainz extends \App\SupportedApps
+{
 }

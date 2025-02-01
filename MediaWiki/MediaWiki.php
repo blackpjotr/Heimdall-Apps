@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\MediaWiki;
+<?php
 
-class MediaWiki extends \App\SupportedApps {
+namespace App\SupportedApps\MediaWiki;
 
+class MediaWiki extends \App\SupportedApps
+{
 }

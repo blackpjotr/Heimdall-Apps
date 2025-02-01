@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\IcingaWeb;
+<?php
 
-class IcingaWeb extends \App\SupportedApps {
+namespace App\SupportedApps\IcingaWeb;
 
+class IcingaWeb extends \App\SupportedApps
+{
 }

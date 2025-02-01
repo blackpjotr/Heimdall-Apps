@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Bacula;
+<?php
 
-class Bacula extends \App\SupportedApps {
+namespace App\SupportedApps\Bacula;
 
+class Bacula extends \App\SupportedApps
+{
 }

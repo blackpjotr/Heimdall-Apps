@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Zulip;
+<?php
 
-class Zulip extends \App\SupportedApps {
+namespace App\SupportedApps\Zulip;
 
+class Zulip extends \App\SupportedApps
+{
 }

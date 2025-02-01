@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Meraki;
+<?php
 
-class Meraki extends \App\SupportedApps {
+namespace App\SupportedApps\Meraki;
 
+class Meraki extends \App\SupportedApps
+{
 }

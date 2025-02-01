@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Grafana;
+<?php
 
-class Grafana extends \App\SupportedApps {
+namespace App\SupportedApps\Grafana;
 
+class Grafana extends \App\SupportedApps
+{
 }

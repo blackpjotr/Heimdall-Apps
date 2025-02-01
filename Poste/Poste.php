@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Poste;
+<?php
 
-class Poste extends \App\SupportedApps {
+namespace App\SupportedApps\Poste;
 
+class Poste extends \App\SupportedApps
+{
 }

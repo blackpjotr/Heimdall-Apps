@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Shinobi;
+<?php
 
-class Shinobi extends \App\SupportedApps {
+namespace App\SupportedApps\Shinobi;
 
+class Shinobi extends \App\SupportedApps
+{
 }

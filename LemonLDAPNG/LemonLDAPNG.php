@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\LemonLDAPNG;
+<?php
 
-class LemonLDAPNG extends \App\SupportedApps {
+namespace App\SupportedApps\LemonLDAPNG;
 
+class LemonLDAPNG extends \App\SupportedApps
+{
 }

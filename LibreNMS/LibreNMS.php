@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\LibreNMS;
+<?php
 
-class LibreNMS extends \App\SupportedApps {
+namespace App\SupportedApps\LibreNMS;
 
+class LibreNMS extends \App\SupportedApps
+{
 }

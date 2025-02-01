@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\OpenWrt;
+<?php
 
-class OpenWrt extends \App\SupportedApps {
+namespace App\SupportedApps\OpenWrt;
 
+class OpenWrt extends \App\SupportedApps
+{
 }

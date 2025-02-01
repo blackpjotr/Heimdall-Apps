@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Jeedom;
+<?php
 
-class Jeedom extends \App\SupportedApps {
+namespace App\SupportedApps\Jeedom;
 
+class Jeedom extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Cockpit;
+<?php
 
-class Cockpit extends \App\SupportedApps {
+namespace App\SupportedApps\Cockpit;
 
+class Cockpit extends \App\SupportedApps
+{
 }

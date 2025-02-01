@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\InvoiceNinja;
+<?php
 
-class InvoiceNinja extends \App\SupportedApps {
+namespace App\SupportedApps\InvoiceNinja;
 
+class InvoiceNinja extends \App\SupportedApps
+{
 }

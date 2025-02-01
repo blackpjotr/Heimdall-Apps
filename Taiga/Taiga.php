@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Taiga;
+<?php
 
-class Taiga extends \App\SupportedApps {
+namespace App\SupportedApps\Taiga;
 
+class Taiga extends \App\SupportedApps
+{
 }

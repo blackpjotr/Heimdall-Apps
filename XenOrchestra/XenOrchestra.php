@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\XenOrchestra;
+<?php
 
-class XenOrchestra extends \App\SupportedApps {
+namespace App\SupportedApps\XenOrchestra;
 
+class XenOrchestra extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Raneto;
+<?php
 
-class Raneto extends \App\SupportedApps {
+namespace App\SupportedApps\Raneto;
 
+class Raneto extends \App\SupportedApps
+{
 }

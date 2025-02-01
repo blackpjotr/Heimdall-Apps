@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Serviio;
+<?php
 
-class Serviio extends \App\SupportedApps {
+namespace App\SupportedApps\Serviio;
 
+class Serviio extends \App\SupportedApps
+{
 }

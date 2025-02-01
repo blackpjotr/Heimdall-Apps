@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Rundeck;
+<?php
 
-class Rundeck extends \App\SupportedApps {
+namespace App\SupportedApps\Rundeck;
 
+class Rundeck extends \App\SupportedApps
+{
 }

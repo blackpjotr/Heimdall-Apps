@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\MineOS;
+<?php
 
-class MineOS extends \App\SupportedApps {
+namespace App\SupportedApps\MineOS;
 
+class MineOS extends \App\SupportedApps
+{
 }

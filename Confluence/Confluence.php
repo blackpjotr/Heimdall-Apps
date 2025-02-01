@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Confluence;
+<?php
 
-class Confluence extends \App\SupportedApps {
+namespace App\SupportedApps\Confluence;
 
+class Confluence extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Statping;
+<?php
 
-class Statping extends \App\SupportedApps {
+namespace App\SupportedApps\Statping;
 
+class Statping extends \App\SupportedApps
+{
 }

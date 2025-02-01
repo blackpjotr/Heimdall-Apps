@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Harbor;
+<?php
 
-class Harbor extends \App\SupportedApps {
+namespace App\SupportedApps\Harbor;
 
+class Harbor extends \App\SupportedApps
+{
 }

@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Booksonic;
+<?php
 
-class Booksonic extends \App\SupportedApps {
+namespace App\SupportedApps\Booksonic;
 
+class Booksonic extends \App\SupportedApps
+{
 }

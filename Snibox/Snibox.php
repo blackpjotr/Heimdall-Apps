@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Snibox;
+<?php
 
-class Snibox extends \App\SupportedApps {
+namespace App\SupportedApps\Snibox;
 
+class Snibox extends \App\SupportedApps
+{
 }

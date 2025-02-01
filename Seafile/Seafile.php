@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Seafile;
+<?php
 
-class Seafile extends \App\SupportedApps {
+namespace App\SupportedApps\Seafile;
 
+class Seafile extends \App\SupportedApps
+{
 }

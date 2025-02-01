@@ -1,12 +1,15 @@
-<?php namespace App\SupportedApps\Cabot;
+<?php
 
-class Cabot extends \App\SupportedApps implements \App\EnhancedApps {
-    private const ENDPOINT = 'api/services/?format=json';
+namespace App\SupportedApps\Cabot;
 
-    private const STATUS_PASSING = 'Passing';
-    private const STATUS_WARNING = 'Warning';
-    private const STATUS_ERROR = 'Error';
-    private const STATUS_CRITICAL = 'Critical';
+class Cabot extends \App\SupportedApps implements \App\EnhancedApps
+{
+    private const ENDPOINT = "api/services/?format=json";
+
+    private const STATUS_PASSING = "Passing";
+    private const STATUS_WARNING = "Warning";
+    private const STATUS_ERROR = "Error";
+    private const STATUS_CRITICAL = "Critical";
 
     public $config;
 
@@ -29,7 +32,9 @@ class Cabot extends \App\SupportedApps implements \App\EnhancedApps {
         ];
 
         foreach ($services as $service) {
-            $overallStatus = ucfirst(strtolower($service->overall_status ?? ''));
+            $overallStatus = ucfirst(
+                strtolower($service->overall_status ?? "")
+            );
 
             if (isset($results[$overallStatus])) {
                 $results[$overallStatus]++;
@@ -46,15 +51,15 @@ class Cabot extends \App\SupportedApps implements \App\EnhancedApps {
             $status = self::STATUS_PASSING;
         }
 
-        $data['status_output'] = $status;
-        $data['count_output'] = $results[$status];
+        $data["status_output"] = $status;
+        $data["count_output"] = $results[$status];
 
-        return parent::getLiveStats('inactive', $data);
+        return parent::getLiveStats("inactive", $data);
     }
 
     public function url($endpoint)
     {
-        $api_url = parent::normaliseurl($this->config->url).$endpoint;
+        $api_url = parent::normaliseurl($this->config->url) . $endpoint;
         return $api_url;
     }
 }

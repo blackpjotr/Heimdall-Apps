@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Roundcube;
+<?php
 
-class Roundcube extends \App\SupportedApps {
+namespace App\SupportedApps\Roundcube;
 
+class Roundcube extends \App\SupportedApps
+{
 }

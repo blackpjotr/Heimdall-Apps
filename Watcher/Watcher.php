@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Watcher;
+<?php
 
-class Watcher extends \App\SupportedApps {
+namespace App\SupportedApps\Watcher;
 
+class Watcher extends \App\SupportedApps
+{
 }

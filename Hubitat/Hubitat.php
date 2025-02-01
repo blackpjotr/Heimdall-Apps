@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Hubitat;
+<?php
 
-class Hubitat extends \App\SupportedApps {
+namespace App\SupportedApps\Hubitat;
 
+class Hubitat extends \App\SupportedApps
+{
 }

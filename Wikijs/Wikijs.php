@@ -1,5 +1,7 @@
-<?php namespace App\SupportedApps\Wikijs;
+<?php
 
-class Wikijs extends \App\SupportedApps {
+namespace App\SupportedApps\Wikijs;
 
+class Wikijs extends \App\SupportedApps
+{
 }
